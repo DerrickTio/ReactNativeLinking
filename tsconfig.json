@@ -1,12 +1,14 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
+    "jsx": "react",
     "strict": true,
+    "types": ["react-native"],
+    "skipLibCheck": true,
     "paths": {
-      "@/*": [
-        "./*"
-      ]
-    }
+      "@/*": ["./*"]
+    },
+    "typeRoots": ["./node_modules/@types", "./node_modules/@types/react-native"]
   },
   "include": [
     "**/*.ts",
